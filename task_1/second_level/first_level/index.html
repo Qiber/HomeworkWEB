@@ -22,7 +22,7 @@
 
   		<li> <a href="index2.html">Сокращенная ссылка на внутреннюю страницу</a> </li>
 
-  		<li> <a href="#fragment">Ссылка на фрагмент</a> </li>
+  		<li> <a href="#fragment">Ссылка на фрагмент (Форма)</a> </li>
 
       <li> <a href="https://www.dns-shop.ru/catalog/17a8a01d16404e77/smartfony/?stock=now-today-tomorrow&price=100000-199999&brand=samsung">Cсылка с тремя параметрами в URL</a> </li>
 
@@ -66,88 +66,72 @@
   </h3>
 
 	<h1 id="fragment">Форма: </h1>
-  
-  <!--   <h1>Пример формы HTML</h1>
 
-    <form action="/"
-      method="POST">
+  <h4>
+  <form method="POST">
 
-      <label>
-        Однострочное текстовое поле:<br />
-        <input name="field-name-1"
-          value="начальное значение" />
-      </label><br />
- -->
-<!-- 
-	<h1>Пример формы HTML</h1>
+    <label>
+      ФИО:<br> <input name="field-full-name" value="">
+    </label><br>
 
-    <form action="/"
-      method="POST">
+    <label>
+      Номер телефона:<br> <input name="field-phone" value="" type="tel">
+    </label><br>
 
-      <label>s
-        Однострочное текстовое поле:<br />
-        <input name="field-name-1"
-          value="начальное значение" />
-      </label>
+    <label>
+      Email:<br> <input name="field-email"value="" type="email">
+    </label><br>
 
-      <label>
-        Текстовое поле email:<br />
-        <input name="field-email"
-          type="email"
-          placeholder="Введите вашу почту" />
-      </label><br />
+    <label>
+      Дата рождения:<br> <input name="field-date" value="" type="date">
+    </label><br>
 
-      <label>
-        Текстовое поле даты:<br />
-        <input name="field-date"
-          value="2019-08-13"
-          type="date" />
-      </label><br />
+    <label>
+      Пол:<br> 
+      <input type="radio" name="field-gender" value="Мужской">
+      Мужской
+    </label><br>
 
-      <label>
-        Многострочное текстовое поле:<br />
-        <textarea name="field-name-2">начальное значение</textarea>
-      </label><br />
+    <label>
+      <input type="radio" name="field-gender" value="Женский">
+      Женский
+    </label><br>
 
-      <label>
-        Список (combobox):<br />
-        <select name="field-name-3">
-          <option value="Значение1">Метка1</option>
-          <option value="Значение2" selected="selected">Метка2</option>
-          <option value="Значение3">Метка3</option>
-        </select>
-      </label><br />
+    <label>
+      <input type="radio" name="field-gender" value="Другой">
+      Другой
+    </label><br>
 
-      <label>
-        Список (listbox с множественным выбором):
-        <br />
-        <select name="field-name-4[]"
-          multiple="multiple">
-          <option value="Значение1">Метка1</option>
-          <option value="Значение2" selected="selected">Метка2</option>
-          <option value="Значение3" selected="selected">Метка3</option>
-        </select>
-      </label><br />
+    <label>
+      Любимый язык программирования:
+      <br>
+      <select name="field-programming-leng" multiple="multiple" size="10">
+          <option value="Pascal">Pascal</option>
+          <option value="C">C</option>
+          <option value="C++">C++</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="PHP">PHP</option>
+          <option value="Python">Python</option>
+          <option value="Java">Java</option>
+          <option value="Haskel">Haskel</option>
+          <option value="Clojure">Clojure</option>
+          <option value="Prolog">Prolog</option>
+          <option value="Scala">Scala</option>
+      </select>
+    </label><br>
 
-      Радиокнопки:<br />
-      <label><input type="radio" checked="checked"
-        name="radio-group-1" value="Значение1" />
-        Подпись радиокнопки 1</label>
-      <label><input type="radio"
-        name="radio-group-1" value="Значение2" />
-        Подпись радиокнопки 2</label><br />
+    <label>
+        Биография:<br> <textarea name="field-bio"></textarea>
+    </label><br>
 
-      Чекбокс:<br />
-      <label><input type="checkbox" checked="checked"
-        name="check-1" />
-        Подпись чекбокса ставим справа</label><br />
+    <label>
+      С контрактом ознакомлен(a)/(ы)
+      <input type="checkbox" name="check">
+    </label><br>
 
-      Кнопка отправки формы,
-      при нажатии заполненные в форму данные
-      отправятся в формате urlencoded методом
-      POST или GET по адресу URL_отправки_данных:
-      <input type="submit" value="Отправить" />
-    </form>
- -->
+    <input type="submit" value="Сохранить">
+    
+  </form>
+  </h4>
 
 </body>
