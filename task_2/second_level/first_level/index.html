@@ -5,13 +5,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>My page</title>
 </head>
 
+<header class="site-header">
+    <img src="../image/imgCube.png" alt="Логотип сайта" class="logo">
+    <h1>Qiber`s site</h1>
+
+  <nav class="main-nav">
+      <ul>
+          <li><a href="https://www.ozon.ru/">Ozon</a></li>
+          <li><a href="https://www.wildberries.ru/">Wildberries</a></li>
+          <li><a href="https://market.yandex.ru/">Яндекс Маркет</a></li>
+      </ul>
+  </nav>
+</header>
 
 <body>
 
-  <h1>Основная страница</h1>
+  <h1>Список гиперссылок:</h1>
   <h3>
   	<ul>
   		<li> <a href="http://www.kubsu.ru">КУБГУ</a> </li>
@@ -65,25 +78,86 @@
 
   </h3>
 
+
+  <div class="block content">
+  <h2 class="textTabl">Таблица</h2>
+  <table class="tabl">
+    </h1>
+    <thead style="background-color: mediumslateblue;">
+      <td>Герой</td>
+      <td>Сила</td>
+      <td>Ловкость</td>
+      <td>Интеллект</td>
+    </thead>
+
+    <tbody>
+
+      <tr style="background-color: dimgrey;">
+        <th>Warlock</th>
+        <th>25</th>
+        <th>20</th>
+        <th>18</th>
+      </tr>
+
+      <tr style="background-color: #E6E6FA">
+        <th>Techis</th>
+        <th>20</th>
+        <th>20</th>
+        <th>24</th>
+      </tr>
+
+      <tr style="background-color: dimgrey;">
+        <th>Viper</th>
+        <th>22</th>
+        <th>17</th>
+        <th>14</th> 
+      </tr>
+
+      <tr style="background-color: #E6E6FA">
+        <th>Sun</th>
+        <th>21</th>
+        <th>24</th>
+        <th>23</th>
+      </tr>
+
+      <tr style="background-color: dimgrey;">
+       <th>Void Spirit</th>
+       <th>21</th>
+        <th>22</th>
+        <th>23</th>
+      </tr>
+
+      <tr>
+        <td colspan="4" style="background-color: #E6E6FA">Самый сильный герой из всей таблицы это - Warlock  </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
 	<h1 id="fragment">Форма: </h1>
 
   <h4>
   <form method="POST">
 
     <label>
-      ФИО:<br> <input name="field-full-name" value="">
+      ФИО:<br> <input name="field-full-name" value="" pattern="[А-Яа-я]*?\s[А-Яа-я]*?\s[А-Яа-я]*" required  placeholder="Введите ФИО">
     </label><br>
 
     <label>
-      Номер телефона:<br> <input name="field-phone" value="" type="tel">
+      Номер телефона:<br> <input name="field-phone" value="" type="tel" placeholder="+7-(***)-***-**-**" minlength="12"
+          value="+7"
+          pattern="+[7]{1}[0-9]{3}[0-9]{3}[0-9]{4}"
+          required>
     </label><br>
 
     <label>
-      Email:<br> <input name="field-email"value="" type="email">
+      Email:<br> <input name="field-email"value="" type="email" placeholder="username@gmail.com" required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
     </label><br>
 
     <label>
-      Дата рождения:<br> <input name="field-date" value="" type="date">
+      Дата рождения:<br> <input name="field-date" value="" type="date" required>
     </label><br>
 
     <label>
@@ -116,7 +190,7 @@
     </label><br>
 
     <label>
-        Биография:<br> <textarea name="field-bio"></textarea>
+        Биография:<br> <textarea name="field-bio" minlength="50" required style="width: 200px; height: 150px;"></textarea>
     </label><br>
 
     <label>
@@ -127,6 +201,11 @@
    <input type="submit" value="Сохранить">
     
   </form>
+
+  <footer class="site-footer">
+      <p>&copy;2024 Мясоедов Андрей</p>
+  </footer>
+
   </h4>
 
 </body>

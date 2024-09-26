@@ -1,0 +1,88 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    text-align: center; /* Центрирование заголовков */
+}
+
+.content {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center; /* Центрирование текста в ячейках */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e9e9e9;
+}
+
+
+/* Шапка сайта */
+.site-header {
+    background-color: #CCD5FF;
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.site-header .logo {
+    max-width: 150px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.site-header h1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+/* Навигация */
+.main-nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.main-nav ul li {
+    display: inline-block; /* Используйте inline-block для выравнивания */
+    margin: 0 15px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333; /* Цвет текста навигации */
+}
+
+
+
+/* Подвал сайта */
+.site-footer {
+    background-color: #CCD5FF;
+    padding: 10px;
+    text-align: center; /* Центрирование текста */
+}
