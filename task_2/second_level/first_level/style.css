@@ -78,7 +78,9 @@ tbody tr:nth-child(odd) {
     color: #333; /* Цвет текста навигации */
 }
 
-
+ul{
+    list-style-position: inside;
+}
 
 /* Подвал сайта */
 .site-footer {
