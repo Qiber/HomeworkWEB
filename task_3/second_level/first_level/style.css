@@ -1,90 +1,89 @@
-/* Общие стили */
+@font-face {
+    font-family: 'LEPKA';
+    src: url('../fonts/LEPKA.otf') format('opentype');
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', 'Arial', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-h1, h2, h3, h4 {
-    text-align: center; /* Центрирование заголовков */
-}
-
-.content {
-    max-width: 960px;
-    margin: 20px auto;
-    padding: 0 20px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-table, th, td {
-    border: 1px solid black;
-}
-
-th, td {
-    padding: 10px;
-    text-align: center; /* Центрирование текста в ячейках */
-}
-
-tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-tbody tr:nth-child(odd) {
-    background-color: #e9e9e9;
-}
-
-
-/* Шапка сайта */
 .site-header {
-    background-color: #CCD5FF;
-    padding: 20px;
-    text-align: left;
-    border-bottom: 1px solid #ccc;
+    background-color: #caf0f8;
+    width: 100%;
+    height: 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
 }
 
 .site-header .logo {
-    max-width: 150px;
-    display: inline-block;
-    vertical-align: middle;
+    width: 170px;
+    margin-right: 20px;
+    border-radius: 50px;
 }
 
 .site-header h1 {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 20px;
-    font-size: 24px;
+    font-family: "Lepka";
+    margin: 0;
 }
 
-/* Навигация */
-.main-nav ul {
-    list-style-type: none;
+.site-header .main-nav {
+    background-color: #caf0f8;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.site-header .main-nav ul {
+    list-style: none;
     padding: 0;
+    margin: 0;
+}
+
+.site-header .main-nav li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.site-header .main-nav a {
+    color: #8D6A9F;
+    text-decoration: none;
+}
+
+.hyperlinks {
     text-align: center;
 }
 
-.main-nav ul li {
-    display: inline-block; /* Используйте inline-block для выравнивания */
-    margin: 0 15px;
-}
-
-.main-nav ul li a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #333; /* Цвет текста навигации */
-}
-
-ul{
+.hyperlinks li {
     list-style-position: inside;
+    list-style: none;
 }
 
-/* Подвал сайта */
-.site-footer {
-    background-color: #CCD5FF;
+.table {
+    margin: 0 auto;
+}
+
+#fragment {
+    text-align: center;
+}
+
+.Form {
+    text-align: center;
     padding: 10px;
-    text-align: center; /* Центрирование текста */
+}
+
+.site-footer {
+    background-color: #caf0f8;
+    padding: 10px;
+    text-align: center;
 }

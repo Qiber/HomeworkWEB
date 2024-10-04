@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="ru">
 
 <head>
@@ -9,203 +8,166 @@
     <title>My page</title>
 </head>
 
-<header class="site-header">
-    <img src="../image/imgCube.png" alt="Логотип сайта" class="logo">
-    <h1>Qiber`s site</h1>
-
-  <nav class="main-nav">
-      <ul>
-          <li><a href="https://www.ozon.ru/">Ozon</a></li>
-          <li><a href="https://www.wildberries.ru/">Wildberries</a></li>
-          <li><a href="https://market.yandex.ru/">Яндекс Маркет</a></li>
-      </ul>
-  </nav>
-</header>
-
 <body>
 
-  <h1>Список гиперссылок:</h1>
-  <h3>
-  	<ul>
-  		<li> <a href="http://www.kubsu.ru">КУБГУ</a> </li>
-
-  		<li> <a href="https://www.kubsu.ru">КУБГУ (HTTPS)</a> </li>
-
-  		<li> <a href="https://www.kubsu.ru" title="Прямо как я"> <img src="../image/img1.jpg" alt="literally me" width="300"></a> </li>
-
-  		<li> <a href="index2.html">Сокращенная ссылка на внутреннюю страницу</a> </li>
-
-  		<li> <a href="#fragment">Ссылка на фрагмент (Форма)</a> </li>
-
-      <li> <a href="https://www.dns-shop.ru/catalog/17a8a01d16404e77/smartfony/?stock=now-today-tomorrow&price=100000-199999&brand=samsung">Cсылка с тремя параметрами в URL</a> </li>
-
-      <li> <a href="https://www.example.com/item?id=12345">Ссылка с параметром id</a> </li>
-
-      <li><a href="index2.html">Относительная ссылка на страницу в текущем каталоге</a></li>
-
-      <li><a href="../about/about.html">Относительнуа ссылка на страницу в каталоге about</a></li>
-
-      <li> <a href="../index3.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a> </li>
-
-      <li> <a href="../../index4.html">Относительная на страницу в каталоге двумя уровнями выше</a> </li>
-
-      <li> Контекстная <a href="https://classroom.google.uk.to/static/assets/gamebackend/chromedino">ссылка</a> в тексте абзаца</li>
-
-      <li><a href="https://carx-online.com/ru#contacts">Ссылка на фрагмент страницы стороннего сайта</a> </li>
-
-      <img src="../image/img2.jpg" usemap="#image-map" alt="Example Image" width="500">
-
-      <map name="image-map">
-          <area shape="rect" coords="34,44,270,350" href="https://zenrus.ru/" alt="Rectangle Area" title="Область квадрата">
-          <area shape="circle" coords="400,150,80" href="https://alice.yandex.ru/" alt="Circle Area" title="Область круга">
-      </map>
-
-      <li> <a href="">Ссылка с пустым href</a></li>
-
-      <li> <a>Ссылка без href</a> </li>
-
-      <li> <a href="https://github.com/Qiber" rel="nofollow">Ссылка с запретом перехода для поисковиков</a> </li>
-
-      <li> <a href="index2.html">Запрещенную для индексации поисковиками ссылка</a> </li>
-
-      <ol>
-        <li> <a href="https://youtu.be/3GKaT-rUwF4?si=odbwIx2MHgtq0vVx" title="Видео 1">Ссылка 1</a> </li>
-        <li> <a href="https://youtu.be/lwP2pKDMM7Y?si=Dwggm3VnKIqqiI_S" title="Видео 2">Ссылка 2</a> </li>
-        <li> <a href="https://youtu.be/ma46_t-Jd5k?si=gK7dL9R2aQSLVETn" title="Видео 3">Ссылка 3</a> </li>
-      </ol>
-
-      <li> <a href="ftp://username:password@ftp.example.com/file.txt">Ссылка на FTP</a> </li>
-
-  </h3>
+<header class="site-header">
+    <div class="logo-title">
+        <img src="../image/imgCube.png" alt="Логотип сайта" class="logo">
+        <h1>Qiber's site</h1>
+    </div>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="https://www.ozon.ru/">Ozon</a></li>
+            <li><a href="https://www.wildberries.ru/">Wildberries</a></li>
+            <li><a href="https://market.yandex.ru/">Яндекс Маркет</a></li>
+        </ul>
+    </nav>
+</header>
 
 
-  <div class="block content">
-  <h2 class="textTabl">Таблица</h2>
-  <table class="tabl">
-    </h1>
-    <thead style="background-color: mediumslateblue;">
-      <td>Герой</td>
-      <td>Сила</td>
-      <td>Ловкость</td>
-      <td>Интеллект</td>
+<h1 style="text-align: center;">Список гиперссылок:</h1>
+<h3>
+    <ul class="hyperlinks">
+        <li><a href="http://www.kubsu.ru">КУБГУ</a></li>
+        <li><a href="https://www.kubsu.ru">КУБГУ (HTTPS)</a></li>
+        <li><a href="https://www.kubsu.ru" title="Прямо как я"><img src="../image/img1.jpg" alt="literally me" width="300"></a></li>
+        <li><a href="index2.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+        <li><a href="#fragment">Ссылка на фрагмент (Форма)</a></li>
+        <li><a href="https://www.dns-shop.ru/catalog/17a8a01d16404e77/smartfony/?stock=now-today-tomorrow&price=100000-199999&brand=samsung">Ссылка с тремя параметрами в URL</a></li>
+        <li><a href="https://www.example.com/item?id=12345">Ссылка с параметром id</a></li>
+        <li><a href="index2.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+        <li><a href="../about/about.html">Относительная ссылка на страницу в каталоге about</a></li>
+        <li><a href="../index3.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+        <li><a href="../../index4.html">Относительная на страницу в каталоге двумя уровнями выше</a></li>
+        <li>Контекстная <a href="https://classroom.google.uk.to/static/assets/gamebackend/chromedino">ссылка</a> в тексте абзаца</li>
+        <li><a href="https://carx-online.com/ru#contacts">Ссылка на фрагмент страницы стороннего сайта</a></li>
+        <li><a href="">Ссылка с пустым href</a></li>
+        <li><a>Ссылка без href</a></li>
+        <li><a href="https://github.com/Qiber" rel="nofollow">Ссылка с запретом перехода для поисковиков</a></li>
+        <li><a href="index2.html">Запрещенную для индексации поисковиками ссылка</a></li>
+        <ol>
+            <li><a href="https://youtu.be/3GKaT-rUwF4?si=odbwIx2MHgtq0vVx" title="Видео 1">Ссылка 1</a></li>
+            <li><a href="https://youtu.be/lwP2pKDMM7Y?si=Dwggm3VnKIqqiI_S" title="Видео 2">Ссылка 2</a></li>
+            <li><a href="https://youtu.be/ma46_t-Jd5k?si=gK7dL9R2aQSLVETn" title="Видео 3">Ссылка 3</a></li>
+        </ol>
+        <li><a href="ftp://username:password@ftp.example.com/file.txt">Ссылка на FTP</a></li>
+    </ul>
+</h3>
+
+<h2 style="text-align: center;">Таблица</h2>
+
+<table class="table">
+    <thead style="background-color: #caf0f8;">
+        <tr>
+            <th>Герой</th>
+            <th>Сила</th>
+            <th>Ловкость</th>
+            <th>Интеллект</th>
+        </tr>
     </thead>
 
     <tbody>
-
-      <tr style="background-color: dimgrey;">
-        <th>Warlock</th>
-        <th>25</th>
-        <th>20</th>
-        <th>18</th>
-      </tr>
-
-      <tr style="background-color: #E6E6FA">
-        <th>Techis</th>
-        <th>20</th>
-        <th>20</th>
-        <th>24</th>
-      </tr>
-
-      <tr style="background-color: dimgrey;">
-        <th>Viper</th>
-        <th>22</th>
-        <th>17</th>
-        <th>14</th> 
-      </tr>
-
-      <tr style="background-color: #E6E6FA">
-        <th>Sun</th>
-        <th>21</th>
-        <th>24</th>
-        <th>23</th>
-      </tr>
-
-      <tr style="background-color: dimgrey;">
-       <th>Void Spirit</th>
-       <th>21</th>
-        <th>22</th>
-        <th>23</th>
-      </tr>
-
-      <tr>
-        <td colspan="4" style="background-color: #E6E6FA">Самый сильный герой из всей таблицы это - Warlock  </td>
-      </tr>
+        <tr style="background-color: dimgrey;">
+            <td>Warlock</td>
+            <td>25</td>
+            <td>20</td>
+            <td>18</td>
+        </tr>
+        <tr style="background-color: #E6E6FA">
+            <td>Techis</td>
+            <td>20</td>
+            <td>20</td>
+            <td>24</td>
+        </tr>
+        <tr style="background-color: dimgrey;">
+            <td>Viper</td>
+            <td>22</td>
+            <td>17</td>
+            <td>14</td>
+        </tr>
+        <tr style="background-color: #E6E6FA">
+            <td>Sun</td>
+            <td>21</td>
+            <td>24</td>
+            <td>23</td>
+        </tr>
+        <tr style="background-color: dimgrey;">
+            <td>Void Spirit</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td colspan="4" style="background-color: #E6E6FA">Самый сильный герой из всей таблицы это - Warlock</td>
+        </tr>
     </tbody>
-  </table>
-</div>
+</table>
 
+<h1 id="fragment">Форма:</h1>
 
-	<h1 id="fragment">Форма: </h1>
+<h4>
+    <form method="POST" class="Form">
+        <label>
+            ФИО:<br> <input name="field-full-name" value="" pattern="[А-Яа-я]*?\s[А-Яа-я]*?\s[А-Яа-я]*" required placeholder="Введите ФИО">
+        </label><br>
 
-  <h4>
-  <form method="POST">
+        <label>
+            Номер телефона:<br> <input name="field-phone" value="" type="tel" placeholder="+7-(***)-***-**-**" minlength="12" value="+7" pattern="+[7]{1}[0-9]{3}[0-9]{3}[0-9]{4}" required>
+        </label><br>
 
-    <label>
-      ФИО:<br> <input name="field-full-name" value="" pattern="[А-Яа-я]*?\s[А-Яа-я]*?\s[А-Яа-я]*" required  placeholder="Введите ФИО">
-    </label><br>
+        <label>
+            Email:<br> <input name="field-email" value="" type="email" placeholder="username@gmail.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+        </label><br>
 
-    <label>
-      Номер телефона:<br> <input name="field-phone" value="" type="tel" placeholder="+7-(***)-***-**-**" minlength="12"
-          value="+7"
-          pattern="+[7]{1}[0-9]{3}[0-9]{3}[0-9]{4}"
-          required>
-    </label><br>
+        <label>
+            Дата рождения:<br> <input name="field-date" value="" type="date" required>
+        </label><br>
 
-    <label>
-      Email:<br> <input name="field-email"value="" type="email" placeholder="username@gmail.com" required
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-    </label><br>
+        <label>
+            Пол:<br>
+            <input type="radio" name="field-gender" value="Мужской">
+            Мужской
+        </label><br>
 
-    <label>
-      Дата рождения:<br> <input name="field-date" value="" type="date" required>
-    </label><br>
+        <label>
+            <input type="radio" name="field-gender" value="Женский">
+            Женский
+        </label><br>
 
-    <label>
-      Пол:<br> 
-      <input type="radio" name="field-gender" value="Мужской">
-      Мужской
-    </label><br>
+        <label>
+            Любимый язык программирования:
+            <br>
+            <select name="field-programming-leng" multiple="multiple" size="10">
+                <option value="Pascal">Pascal</option>
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="PHP">PHP</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="Haskel">Haskel</option>
+                <option value="Clojure">Clojure</option>
+                <option value="Prolog">Prolog</option>
+                <option value="Scala">Scala</option>
+            </select>
+        </label><br>
 
-    <label>
-      <input type="radio" name="field-gender" value="Женский">
-      Женский
-    </label><br>
+        <label>
+            Биография:<br> <textarea name="field-bio" minlength="50" required style="width: 200px; height: 150px;"></textarea>
+        </label><br>
 
-    <label>
-      Любимый язык программирования:
-      <br>
-      <select name="field-programming-leng" multiple="multiple" size="10">
-          <option value="Pascal">Pascal</option>
-          <option value="C">C</option>
-          <option value="C++">C++</option>
-          <option value="JavaScript">JavaScript</option>
-          <option value="PHP">PHP</option>
-          <option value="Python">Python</option>
-          <option value="Java">Java</option>
-          <option value="Haskel">Haskel</option>
-          <option value="Clojure">Clojure</option>
-          <option value="Prolog">Prolog</option>
-          <option value="Scala">Scala</option>
-      </select>
-    </label><br>
+        <label>
+            С контрактом ознакомлен(a)
+            <input type="checkbox" name="check">
+        </label><br>
 
-    <label>
-        Биография:<br> <textarea name="field-bio" minlength="50" required style="width: 200px; height: 150px;"></textarea>
-    </label><br>
+        <input id="box" type="submit" value="Сохранить">
+    </form>
 
-    <label>
-      С контрактом ознакомлен(a)
-      <input type="checkbox" name="check">
-    </label><br>
-
-   <input type="submit" value="Сохранить">
-    
-  </form>
-
-  <footer class="site-footer">
-      <p>&copy;2024 Мясоедов Андрей</p>
-  </footer>
-
-  </h4>
+    <footer class="site-footer">
+        <p>&copy;2024 Мясоедов Андрей</p>
+    </footer>
+</h4>
 
 </body>
+</html>
