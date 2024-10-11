@@ -63,7 +63,6 @@ body {
 
 .site-header .main-nav li {
     margin-left: 20px;
-    flex-direction: column;
 }
 
 .site-header .main-nav a {
@@ -101,44 +100,41 @@ body {
     margin-top: auto;
 }
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
 }
 
-.table-section{
+.table-section {
     order: 1;
 }
 
-.hyperlinks-section{
+.hyperlinks-section {
     order: 2;
 }
 
-.form-section{
+.form-section {
     order: 3;
 }
 
 @media (min-width: 768px) {
-
-    .site-header .main-nav li{
+    .site-header .main-nav li {
         display: inline;
     }
 
-    .site-header{
+    .site-header {
         flex-direction: row;
     }
 
-    .table-section{
+    .table-section {
         order: 2;
     }
 
-    .hyperlinks-section{
+    .hyperlinks-section {
         order: 1;
     }
 
-    .form-section{
+    .form-section {
         order: 3;
     }
-
 }
-
