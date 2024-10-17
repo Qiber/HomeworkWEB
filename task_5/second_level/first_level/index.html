@@ -7,6 +7,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>My page</title>
     <link rel="icon" href="../image/icon.png" type="image/png">
 </head>
@@ -169,6 +170,34 @@
                 <button type="submit" class="btn btn-primary mt-3">Сохранить</button>
             </form>
         </section>
+
+        <section class="calculator my-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Калькулятор стоимости</h2>
+                <form onsubmit="return click1();" class="bg-light p-4 rounded shadow">
+                    <div class="form-group">
+                        <label for="cost">Количество товара:</label>
+                        <input id="cost" name="cost" type="number" min="1" required class="form-control" placeholder="Введите количество">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product">Выберите продукт:</label>
+                        <select name="product" id="product" class="form-control">
+                            <option value="100">Товар A (100р)</option>
+                            <option value="200">Товар B (200р)</option>
+                            <option value="300">Товар C (300р)</option>
+                        </select>
+                    </div>
+
+                    <button id="button" type="submit" class="btn btn-primary btn-block">Рассчитать</button>
+                </form>
+
+                <p class="mt-3 text-center">Стоимость:</p>
+                <div id="result" class="text-center font-weight-bold"></div>
+            </div>
+        </section>
+
+
     </div>
 </main>
 
