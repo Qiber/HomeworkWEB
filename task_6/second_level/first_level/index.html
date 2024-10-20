@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>My page</title>
+    <link rel="icon" href="../image/icon.png" type="image/png">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="logo-title">
+        <img src="../image/imgCube.png" alt="Логотип сайта" class="logo">
+        <h1>Qiber's site</h1>
+    </div>
+    <nav class="main-nav">
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="https://www.ozon.ru/">Ozon</a></li>
+            <li class="list-inline-item"><a href="https://www.wildberries.ru/">Wildberries</a></li>
+            <li class="list-inline-item"><a href="https://market.yandex.ru/">Яндекс Маркет</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container mt-5">
+    <div class="row">
+        <section class="col-md-4 hyperlinks-section mb-4">
+            <h2 class="text-center">Список гиперссылок:</h2>
+            <ul class="list-group">
+                <li class="list-group-item"><a href="http://www.kubsu.ru">КУБГУ</a></li>
+                <li class="list-group-item"><a href="https://www.kubsu.ru">КУБГУ (HTTPS)</a></li>
+                <li class="list-group-item"><a href="https://www.kubsu.ru" title="Прямо как я"><img src="../image/img1.jpg" alt="literally me" width="300"></a></li>
+                <li class="list-group-item"><a href="index2.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+                <li class="list-group-item"><a href="#fragment">Ссылка на фрагмент (Форма)</a></li>
+                <li class="list-group-item"><a href="https://www.dns-shop.ru/catalog/17a8a01d16404e77/smartfony/?stock=now-today-tomorrow&price=100000-199999&brand=samsung">Ссылка с тремя параметрами в URL</a></li>
+                <li class="list-group-item"><a href="https://www.example.com/item?id=12345">Ссылка с параметром id</a></li>
+                <li class="list-group-item"><a href="index2.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+                <li class="list-group-item"><a href="../about/about.html">Относительная ссылка на страницу в каталоге about</a></li>
+                <li class="list-group-item"><a href="../index3.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+                <li class="list-group-item"><a href="../../index4.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+                <li class="list-group-item">Контекстная <a href="https://classroom.google.uk.to/static/assets/gamebackend/chromedino">ссылка</a> в тексте абзаца</li>
+                <li class="list-group-item"><a href="https://carx-online.com/ru#contacts">Ссылка на фрагмент страницы стороннего сайта</a></li>
+                <img src="../image/img2.jpg" usemap="#image-map" alt="Example Image" width="500">
+
+                <map name="image-map">
+                    <area shape="rect" coords="34,44,270,350" href="https://zenrus.ru/" alt="Rectangle Area" title="Область квадрата">
+                    <area shape="circle" coords="400,150,80" href="https://alice.yandex.ru/" alt="Circle Area" title="Область круга">
+                </map>
+
+                <li class="list-group-item"><a href="">Ссылка с пустым href</a></li>
+                <li class="list-group-item"><a>Ссылка без href</a></li>
+                <li class="list-group-item"><a href="https://github.com/Qiber" rel="nofollow">Ссылка с запретом перехода для поисковиков</a></li>
+                <li class="list-group-item"><a href="index2.html">Запрещенную для индексации поисковиками ссылка</a></li>
+                <ol>
+                    <li><a href="https://youtu.be/3GKaT-rUwF4?si=odbwIx2MHgtq0vVx" title="Видео 1">Ссылка 1</a></li>
+                    <li><a href="https://youtu.be/lwP2pKDMM7Y?si=Dwggm3VnKIqqiI_S" title="Видео 2">Ссылка 2</a></li>
+                    <li><a href="https://youtu.be/ma46_t-Jd5k?si=gK7dL9R2aQSLVETn" title="Видео 3">Ссылка 3</a></li>
+                </ol>
+                <li class="list-group-item"><a href="ftp://username:password@ftp.example.com/file.txt">Ссылка на FTP</a></li>
+            </ul>
+        </section>
+
+        <section class="col-md-8 table-section mb-4">
+            <h2 class="text-center">Таблица</h2>
+            <table class="table">
+                <thead style="background-color: #caf0f8;">
+                    <tr>
+                        <th>Герой</th>
+                        <th>Сила</th>
+                        <th>Ловкость</th>
+                        <th>Интеллект</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: dimgrey;">
+                        <td>Warlock</td>
+                        <td>25</td>
+                        <td>20</td>
+                        <td>18</td>
+                    </tr>
+                    <tr style="background-color: #E6E6FA">
+                        <td>Techis</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td>24</td>
+                    </tr>
+                    <tr style="background-color: dimgrey;">
+                        <td>Viper</td>
+                        <td>22</td>
+                        <td>17</td>
+                        <td>14</td>
+                    </tr>
+                    <tr style="background-color: #E6E6FA">
+                        <td>Sun</td>
+                        <td>21</td>
+                        <td>24</td>
+                        <td>23</td>
+                    </tr>
+                    <tr style="background-color: dimgrey;">
+                        <td>Void Spirit</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="background-color: #E6E6FA">Самый сильный герой из всей таблицы это - Warlock</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="form-section col-md-12 mb-4">
+            <h1 id="fragment" class="text-center">Форма:</h1>
+            <form method="POST" class="Form">
+                <div class="form-group">
+                    <label for="field-full-name">ФИО:</label>
+                    <input name="field-full-name" class="form-control" id="field-full-name" placeholder="Введите ФИО" required>
+                </div>
+                <div class="form-group">
+                    <label for="field-phone">Номер телефона:</label>
+                    <input name="field-phone" type="tel" class="form-control" id="field-phone" placeholder="+7-(***)-***-**-**" minlength="12" required>
+                </div>
+                <div class="form-group">
+                    <label for="field-email">Email:</label>
+                    <input name="field-email" type="email" class="form-control" id="field-email" placeholder="username@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="field-date">Дата рождения:</label>
+                    <input name="field-date" type="date" class="form-control" id="field-date" required>
+                </div>
+                <div class="form-group">
+                    <label>Пол:</label><br>
+                    <label class="form-check-label">
+                        <input type="radio" name="field-gender" value="Мужской" class="form-check-input"> Мужской
+                    </label><br>
+                    <label class="form-check-label">
+                        <input type="radio" name="field-gender" value="Женский" class="form-check-input"> Женский
+                    </label><br>
+                </div>
+                <div class="form-group">
+                    <label for="field-programming-leng">Любимый язык программирования:</label>
+                    <select name="field-programming-leng" class="form-control" id="field-programming-leng" multiple size="5">
+                        <option value="Pascal">Pascal</option>
+                        <option value="C">C</option>
+                        <option value="C++">C++</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="PHP">PHP</option>
+                        <option value="Python">Python</option>
+                        <option value="Java">Java</option>
+                        <option value="Haskel">Haskel</option>
+                        <option value="Clojure">Clojure</option>
+                        <option value="Prolog">Prolog</option>
+                        <option value="Scala">Scala</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="field-bio">Биография:</label>
+                    <textarea name="field-bio" class="form-control" id="field-bio" minlength="50 required" style="height: 150px;"></textarea>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" name="check" class="form-check-input" id="check">
+                    <label class="form-check-label" for="check">С контрактом ознакомлен(a)</label>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3">Сохранить</button>
+            </form>
+        </section>
+
+        <section class="calculator my-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Калькулятор стоимости</h2>
+                <form onsubmit="return click1();" class="bg-light p-4 rounded shadow">
+                    <div class="form-group">
+                        <label for="cost">Количество товара:</label>
+                        <input id="cost" name="cost" type="number" min="1" required class="form-control" placeholder="Введите количество">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product">Выберите продукт:</label>
+                        <select name="product" id="product" class="form-control">
+                            <option value="100">Товар A (100р)</option>
+                            <option value="200">Товар B (200р)</option>
+                            <option value="300">Товар C (300р)</option>
+                        </select>
+                    </div>
+
+                    <button id="button" type="submit" class="btn btn-primary btn-block">Рассчитать</button>
+                </form>
+
+                <p class="mt-3 text-center">Стоимость:</p>
+                <div id="result" class="text-center font-weight-bold"></div>
+            </div>
+        </section>
+
+
+    </div>
+</main>
+
+<footer class="site-footer bg-light text-center py-3">
+    <p class="mb-0">&copy; 2024 Мясоедов Андрей</p>
+</footer>
+
+</body>
+</html>
