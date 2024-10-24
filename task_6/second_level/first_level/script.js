@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const productTypeElements = document.getElementsByName("productType");
+    const productTypeElements = Array.from(document.getElementsByName("productType"));
     const optionsGroup = document.getElementById("optionsGroup");
     const checkboxGroup = document.getElementById("checkboxGroup");
 
