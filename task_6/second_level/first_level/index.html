@@ -172,30 +172,56 @@
         </section>
 
         <section class="calculator my-5">
-            <div class="container">
-                <h2 class="text-center mb-4">Калькулятор стоимости</h2>
-                <form onsubmit="return click1();" class="bg-light p-4 rounded shadow">
-                    <div class="form-group">
-                        <label for="cost">Количество товара:</label>
-                        <input id="cost" name="cost" type="number" min="1" required class="form-control" placeholder="Введите количество">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="product">Выберите продукт:</label>
-                        <select name="product" id="product" class="form-control">
-                            <option value="100">Товар A (100р)</option>
-                            <option value="200">Товар B (200р)</option>
-                            <option value="300">Товар C (300р)</option>
-                        </select>
-                    </div>
-
-                    <button id="button" type="submit" class="btn btn-primary btn-block">Рассчитать</button>
-                </form>
-
-                <p class="mt-3 text-center">Стоимость:</p>
-                <div id="result" class="text-center font-weight-bold"></div>
+    <div class="container">
+        <h2 class="text-center mb-4">Калькулятор стоимости</h2>
+        <form id="calcForm" class="bg-light p-4 rounded shadow">
+            
+            <!-- Количество товара -->
+            <div class="form-group">
+                <label for="cost">Количество товара:</label>
+                <input id="cost" name="cost" type="number" min="1" required class="form-control" placeholder="Введите количество">
             </div>
-        </section>
+
+            <!-- Тип товара (радиокнопки) -->
+            <div class="form-group">
+                <label>Выберите тип товара:</label><br>
+                <div class="form-check">
+                    <input type="radio" id="type1" name="productType" value="type1" class="form-check-input" checked>
+                    <label for="type1" class="form-check-label">Тип 1 (100р) (без опций)</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="type2" name="productType" value="type2" class="form-check-input">
+                    <label for="type2" class="form-check-label">Тип 2 (100р) (с опциями)</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="type3" name="productType" value="type3" class="form-check-input">
+                    <label for="type3" class="form-check-label">Тип 3 (100р) (с дополнительным свойством)</label>
+                </div>
+            </div>
+
+            <!-- Опции (селект) -->
+            <div class="form-group" id="optionsGroup" style="display: none;">
+                <label for="options">Выберите опцию:</label>
+                <select name="options" id="options" class="form-control">
+                    <option value="50">Опция A (+50р)</option>
+                    <option value="100">Опция B (+100р)</option>
+                </select>
+            </div>
+
+            <!-- Свойства (чекбокс) -->
+            <div class="form-group form-check" id="checkboxGroup" style="display: none;">
+                <input type="checkbox" id="property" name="property" class="form-check-input">
+                <label for="property" class="form-check-label">Свойство (+150р)</label>
+            </div>
+
+            <button id="button" type="submit" class="btn btn-primary btn-block">Рассчитать</button>
+        </form>
+
+        <p class="mt-3 text-center">Стоимость:</p>
+        <div id="result" class="text-center font-weight-bold"></div>
+    </div>
+</section>
+
 
 
     </div>
