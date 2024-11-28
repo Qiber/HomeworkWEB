@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>My page</title>
+    <link rel="icon" href="../image/icon.png" type="image/png">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="logo-title">
+        <img src="../image/imgCube.png" alt="Логотип сайта" class="logo">
+        <h1>Qiber's site</h1>
+    </div>
+    <nav class="main-nav">
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#calculator">Калькулятор</a></li>
+            <li class="list-inline-item"><a href="#table">Таблица</a></li>
+            <li class="list-inline-item"><a href="#fragment">Форма</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container mt-5">
+    <div class="row">
+        <section class="col-md-4 hyperlinks-section mb-4 mx-auto order-2">
+            <h2 class="text-center">Список гиперссылок:</h2>
+            <ul class="list-group">
+                <li class="list-group-item"><a href="http://www.kubsu.ru">КУБГУ</a></li>
+                <li class="list-group-item"><a href="https://www.kubsu.ru">КУБГУ (HTTPS)</a></li>
+                <li class="list-group-item"><a href="https://www.kubsu.ru" title="Прямо как я"><img src="../image/img1.jpg" alt="literally me" width="300"></a></li>
+                <li class="list-group-item"><a href="index2.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+                <li class="list-group-item"><a href="#fragment">Ссылка на фрагмент (Форма)</a></li>
+                <li class="list-group-item"><a href="https://www.dns-shop.ru/catalog/17a8a01d16404e77/smartfony/?stock=now-today-tomorrow&price=100000-199999&brand=samsung">Ссылка с тремя параметрами в URL</a></li>
+                <li class="list-group-item"><a href="https://www.example.com/item?id=12345">Ссылка с параметром id</a></li>
+                <li class="list-group-item"><a href="index2.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+                <li class="list-group-item"><a href="../about/about.html">Относительная ссылка на страницу в каталоге about</a></li>
+                <li class="list-group-item"><a href="../index3.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+                <li class="list-group-item"><a href="../../index4.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+                <li class="list-group-item">Контекстная <a href="https://classroom.google.uk.to/static/assets/gamebackend/chromedino">ссылка</a> в тексте абзаца</li>
+                <li class="list-group-item"><a href="https://carx-online.com/ru#contacts">Ссылка на фрагмент страницы стороннего сайта</a></li>
+                
+                <li class="list-group-item"><img src="../image/img2.jpg" usemap="#image-map" alt="Example Image" width="300">
+
+                <map name="image-map">
+                    <area shape="rect" coords="34,44,270,350" href="https://zenrus.ru/" alt="Rectangle Area" title="Область квадрата">
+                    <area shape="circle" coords="400,150,80" href="https://alice.yandex.ru/" alt="Circle Area" title="Область круга">
+                </map>
+                </li>
+                <li class="list-group-item"><a href="">Ссылка с пустым href</a></li>
+                <li class="list-group-item"><a>Ссылка без href</a></li>
+                <li class="list-group-item"><a href="https://github.com/Qiber" rel="nofollow">Ссылка с запретом перехода для поисковиков</a></li>
+                <li class="list-group-item"><a href="index2.html">Запрещенную для индексации поисковиками ссылка</a></li>
+                <ol>
+                    <li><a href="https://youtu.be/3GKaT-rUwF4?si=odbwIx2MHgtq0vVx" title="Видео 1">Ссылка 1</a></li>
+                    <li><a href="https://youtu.be/lwP2pKDMM7Y?si=Dwggm3VnKIqqiI_S" title="Видео 2">Ссылка 2</a></li>
+                    <li><a href="https://youtu.be/ma46_t-Jd5k?si=gK7dL9R2aQSLVETn" title="Видео 3">Ссылка 3</a></li>
+                </ol>
+                <li class="list-group-item"><a href="ftp://username:password@ftp.example.com/file.txt">Ссылка на FTP</a></li>
+            </ul>
+        </section>
+
+        <section id="table" class="col-md-6 table-section mb-4 mx-auto">
+            <h2 class="text-center">Таблица</h2>
+            <table class="table">
+                <thead style="background-color: #caf0f8;">
+                    <tr>
+                        <th>Герой</th>
+                        <th>Сила</th>
+                        <th>Ловкость</th>
+                        <th>Интеллект</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: dimgrey;">
+                        <td>Warlock</td>
+                        <td>25</td>
+                        <td>20</td>
+                        <td>18</td>
+                    </tr>
+                    <tr style="background-color: #E6E6FA">
+                        <td>Techis</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td>24</td>
+                    </tr>
+                    <tr style="background-color: dimgrey;">
+                        <td>Viper</td>
+                        <td>22</td>
+                        <td>17</td>
+                        <td>14</td>
+                    </tr>
+                    <tr style="background-color: #E6E6FA">
+                        <td>Sun</td>
+                        <td>21</td>
+                        <td>24</td>
+                        <td>23</td>
+                    </tr>
+                    <tr style="background-color: dimgrey;">
+                        <td>Void Spirit</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="background-color: #E6E6FA">Самый сильный герой из всей таблицы это - Warlock</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="form-section col-md-6 mb-4 mx-auto">
+            <h1 id="fragment" class="text-center">Форма:</h1>
+            <form method="POST" class="Form">
+                <div class="form-group">
+                    <label for="field-full-name">ФИО:</label>
+                    <input name="field-full-name" class="form-control" id="field-full-name" placeholder="Введите ФИО" required>
+                </div>
+                <div class="form-group">
+                    <label for="field-phone">Номер телефона:</label>
+                    <input name="field-phone" type="tel" class="form-control" id="field-phone" placeholder="+7-(***)-***-**-**" minlength="12" required>
+                </div>
+                <div class="form-group">
+                    <label for="field-email">Email:</label>
+                    <input name="field-email" type="email" class="form-control" id="field-email" placeholder="username@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="field-date">Дата рождения:</label>
+                    <input name="field-date" type="date" class="form-control" id="field-date" required>
+                </div>
+                <div class="form-group">
+                    <label>Пол:</label><br>
+                    <label class="form-check-label">
+                        <input type="radio" name="field-gender" value="Мужской" class="form-check-input"> Мужской
+                    </label><br>
+                    <label class="form-check-label">
+                        <input type="radio" name="field-gender" value="Женский" class="form-check-input"> Женский
+                    </label><br>
+                </div>
+                <div class="form-group">
+                    <label for="field-programming-leng">Любимый язык программирования:</label>
+                    <select name="field-programming-leng" class="form-control" id="field-programming-leng" multiple size="5">
+                        <option value="Pascal">Pascal</option>
+                        <option value="C">C</option>
+                        <option value="C++">C++</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="PHP">PHP</option>
+                        <option value="Python">Python</option>
+                        <option value="Java">Java</option>
+                        <option value="Haskel">Haskel</option>
+                        <option value="Clojure">Clojure</option>
+                        <option value="Prolog">Prolog</option>
+                        <option value="Scala">Scala</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="field-bio">Биография:</label>
+                    <textarea name="field-bio" class="form-control" id="field-bio" minlength="50" required style="height: 150px;"></textarea>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" name="check" class="form-check-input" id="check">
+                    <label class="form-check-label" for="check">С контрактом ознакомлен(a)</label>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3">Сохранить</button>
+            </form>
+        </section>
+
+        <section id="calculator" class="col-md-6 calculator my-5 mx-auto order-1">
+            <div class="container">
+                <h2 class="text-center mb-4">Калькулятор стоимости</h2>
+                <form id="calcForm" class="bg-light p-4 rounded shadow">
+                    
+                    <!-- Количество товара -->
+                    <div class="form-group">
+                        <label for="cost">Количество товара:</label>
+                        <input id="cost" name="cost" type="number" min="1" required class="form-control" placeholder="Введите количество">
+                    </div>
+
+                    <!-- Тип товара (радиокнопки) -->
+                    <div class="form-group">
+                        <label>Выберите тип товара:</label><br>
+                        <div class="form-check">
+                            <input type="radio" id="type1" name="productType" value="type1" class="form-check-input" checked>
+                            <label for="type1" class="form-check-label">Тип 1 (100р) (без опций)</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" id="type2" name="productType" value="type2" class="form-check-input">
+                            <label for="type2" class="form-check-label">Тип 2 (100р) (с опциями)</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" id="type3" name="productType" value="type3" class="form-check-input">
+                            <label for="type3" class="form-check-label">Тип 3 (100р) (с дополнительным свойством)</label>
+                        </div>
+                    </div>
+
+                    <!-- Опции (селект) -->
+                    <div class="form-group" id="optionsGroup" style="display: none;">
+                        <label for="options">Выберите опцию:</label>
+                        <select name="options" id="options" class="form-control">
+                            <option value="50">Опция A (+50р)</option>
+                            <option value="100">Опция B (+100р)</option>
+                        </select>
+                    </div>
+
+                    <!-- Свойства (чекбокс) -->
+                    <div class="form-group form-check" id="checkboxGroup" style="display: none;">
+                        <input type="checkbox" id="property" name="property" class="form-check-input">
+                        <label for="property" class="form-check-label">Свойство (+150р)</label>
+                    </div>
+
+                    <button id="button" type="submit" class="btn btn-primary btn-block">Рассчитать</button>
+                </form>
+
+                <p class="mt-3 text-center">Стоимость:</p>
+                <div id="result" class="text-center font-weight-bold"></div>
+            </div>
+        </section>
+
+
+
+    <div class="gallery-container mb-4 mx-auto">
+    <button id="prevBtn" class="nav-button">←</button>
+    <div class="slider">
+        <div class="slides">
+            <img src="../image/1.png" alt="Изображение 1">
+            <img src="../image/2.png" alt="Изображение 2">
+            <img src="../image/3.png" alt="Изображение 3">
+            <img src="../image/4.png" alt="Изображение 4">
+            <img src="../image/5.png" alt="Изображение 5">
+            <img src="../image/6.png" alt="Изображение 6">
+            <img src="../image/7.png" alt="Изображение 7">
+            <img src="../image/8.png" alt="Изображение 8">
+        </div>
+    </div>
+    <button id="nextBtn" class="nav-button">→</button>
+</div>
+<div class="pager">
+    <span id="currentPage">1</span> / <span id="totalPages">3</span>
+</div>
+
+
+    <script src="script.js"></script>
+</main>
+
+<section class="formcarry-container">
+  <form action="https://formcarry.com/s/W09WNPvSjBl" method="POST" enctype="multipart/form-data">
+    
+    <div class="formcarry-block">
+      <label for="fc-generated-1-name">Full Name</label>
+      <input type="text" name="name" id="fc-generated-1-name" placeholder="Your first and last name" />
+    </div>
+    
+    <div class="formcarry-block">
+      <label for="fc-generated-1-email">Your Email Address</label>
+      <input type="email" name="email" id="fc-generated-1-email" placeholder="john@doe.com" />
+    </div>
+    
+    <div class="formcarry-block">
+      <label for="fc-generated-1-message">Your message</label>
+      <textarea name="message" name="message" id="fc-generated-1-message" placeholder="Enter your message..."></textarea>
+    </div>
+    
+    <div class="formcarry-block">  
+      <button type="submit">Send</button>
+    </div>
+  
+  </form>
+</section>
+
+<style>
+  
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+    .formcarry-container {
+      box-sizing: border-box;
+      margin: 40px auto 0 auto;
+      padding: 0;
+      font-family: "Inter", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: -0.01em;
+
+      width: 400px;
+
+      /* NORMAL */
+      --fc-border-color: #ECEFF9;
+      --fc-normal-text-color: #0E0B3D;
+      --fc-normal-placeholder-color: #B3B8D0;
+
+      /* PRIMARY COLOR | HSL FORMAT*/
+      --fc-primary-color-hue: 220;
+      --fc-error-color-hue: 356;
+      --fc-primary-hsl: var(--fc-primary-color-hue), 100%, 54%;
+      --fc-error-hsl: var(--fc-error-color-hue), 100%, 54%;
+
+      /* HOVER */
+      --fc-field-hover-bg-color: #F7F9FC;
+      --fc-border-hover-color: #DDE0EE;
+      --fc-field-hover-text-color: #B3B8D0;
+
+      --fc-border-active-color: #1463FF;
+    }
+
+    .formcarry-container * {
+      box-sizing: border-box;
+    }
+
+    .formcarry-container label {
+      display: block;
+      cursor: pointer;
+    }
+
+    .formcarry-container .formcarry-block:not(:first-child) {
+      margin-top: 16px;
+    }
+
+    /*=============================================
+    =            Fields           =
+    =============================================*/
+    
+    .formcarry-container input,
+    .formcarry-container textarea,
+    .formcarry-container select {
+      margin-top: 4px;
+      width: 100%;
+      height: 42px;
+      border: 1px solid var(--fc-border-color);
+      color: var(--fc-normal-text-color);
+      border-radius: 6px;
+      padding: 8px 12px;
+      
+      font-family: "Inter", sans-serif;
+      font-size:14px;
+      transition: 125ms background, 125ms color, 125ms box-shadow;
+    }
+
+    .formcarry-container textarea{
+      min-height: 188px;
+      max-width: 100%;
+      padding-top: 12px;
+    }
+
+    .formcarry-container input::placeholder,
+    .formcarry-container textarea::placeholder,
+    .formcarry-container select::placeholder {
+      color: var(--fc-normal-placeholder-color);
+    }
+
+    .formcarry-container input:hover,
+    .formcarry-container textarea:hover,
+    .formcarry-container select:hover {
+      border-color: var(--fc-border-hover-color);
+      background-color: var(--fc-field-hover-bg-color);
+    }
+
+    .formcarry-container input:hover::placeholder,
+    .formcarry-container textarea:hover::placeholder,
+    .formcarry-container select:hover::placeholder {
+      color: var(--fc-field-hover-text-color);
+    }
+
+    .formcarry-container input:focus,
+    .formcarry-container textarea:focus,
+    .formcarry-container select:focus {
+      background-color: #fff;
+      border-color: hsl(var(--fc-primary-hsl));
+      box-shadow: hsla(var(--fc-primary-hsl), 8%) 0px 0px 0px 3px;
+      outline: none;
+    }
+
+    .formcarry-container select {
+      background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.9997 14.5001L8.46387 10.9642L9.64303 9.78589L11.9997 12.1434L14.3564 9.78589L15.5355 10.9642L11.9997 14.5001Z' fill='%236C6F93'/%3E%3C/svg%3E%0A");
+      /* background-position: calc(100% - 20px) calc(1em + 4px), calc(100% - 15px) calc(1em + 4px); */
+      background-size: 24px 24px;
+      background-position: 98%;
+      background-repeat: no-repeat;
+      appearance: none;
+      -webkit-appearance: none;
+    }
+
+    .formcarry-container button {
+      font-family: "Inter", sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: -0.02em;
+      height: 42px;
+      line-height: 40px;
+      width: 100%;
+      border-radius: 6px;
+      box-sizing: border-box;
+      border: 1px solid hsla(var(--fc-primary-hsl));
+      background-color: hsla(var(--fc-primary-hsl));
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .formcarry-container button {
+      font-family: "Inter", sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: -0.02em;
+      height: 40px;
+      line-height: 24px;
+      width: 100%;
+      border: 0;
+      border-radius: 6px;
+      box-sizing: border-box;
+      background-color: hsla(var(--fc-primary-hsl));
+      color: #fff;
+      cursor: pointer;
+      box-shadow: 0 0 0 0 transparent;
+      
+      transition: 125ms all;
+    }
+    
+    .formcarry-container button:hover {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), hsla(var(--fc-primary-hsl));
+    }
+    
+    .formcarry-container button:focus {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), hsla(var(--fc-primary-hsl));
+      border-inline: 1px solid inline rgba(255, 255, 255, 0.6);
+      box-shadow: 0px 0px 0px 3px rgba(var(--fc-primary-hsl), 12%);
+    }
+
+    .formcarry-container button:active {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), hsla(var(--fc-primary-hsl));
+    }
+
+    .formcarry-container button:disabled {
+      background-color: hsla(var(--fc-primary-hsl), 40%);
+      cursor: not-allowed;
+    }
+
+    .formcarry-container input:focus:required:invalid,
+    .formcarry-container input:focus:invalid, 
+    .formcarry-container select:focus:required:invalid,
+    .formcarry-container select:focus:invalid
+    {
+      color: hsl(var(--fc-error-hsl)); 
+      border-color: hsl(var(--fc-error-hsl));
+      box-shadow: 0px 0px 0px 3px hsla(var(--fc-error-hsl), 12%);
+    }
+
+    /*=====  End of Fields  ======*/
+</style>
+
+<footer class="site-footer bg-light text-center py-3">
+    <p class="mb-0">&copy; 2024 Мясоедов Андрей</p>
+</footer>
+
+</body>
+</html>
